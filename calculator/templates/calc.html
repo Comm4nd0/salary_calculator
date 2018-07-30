@@ -1,0 +1,131 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <main role="main" class="col-md-9 ml-sm-auto col-lg-10 px-4 pt-5">
+        <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
+            <div class="col-4">
+                <small id="Help" class="form-text text-muted">We'll never share your salary information with
+                    anyone
+                    else.
+                </small>
+                <div class="input-group mb-2">
+                    <select id="per" class="form-control">
+                        <option value="yearly">Yearly</option>
+                        <option value="monthly">Monthly</option>
+                        <option value="weekly">Weekly</option>
+                        <option value="daily">Daily</option>
+                    </select>
+
+                    <label class="sr-only" for="InputSalary">Username</label>
+
+                    <div class="input-group-prepend">
+                        <div class="input-group-text">£</div>
+                    </div>
+                    <input type="text" class="form-control" id="InputSalary" placeholder="Enter salary">
+                    <div class="col-4 ">
+                        <button id="getNet" class="btn btn-primary">Get NET Vals</button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-6">
+
+                <div class="jumbotron">
+                    <h2>Gross</h2>
+                    <strong>Yearly salary:</strong>
+                    <div id="yearly">£</div>
+                    <br>
+                    <strong>Monthly salary:</strong>
+                    <div id="monthly">£</div>
+                    <br>
+                    <strong>Weekly salary:</strong>
+                    <div id="weekly">£</div>
+                    <br>
+                    <strong>Daily salary:</strong>
+                    <div id="daily">£</div>
+
+
+                </div>
+            </div>
+            <div class="col-6">
+                <div class="jumbotron">
+                    <h2>Net</h2>
+                    <strong>Yearly salary:</strong>
+                    <div id="netYearly">£</div>
+                    <br>
+                    <strong>Monthly salary:</strong>
+                    <div id="netMonthly">£</div>
+                    <br>
+                    <strong>Weekly salary:</strong>
+                    <div id="netWeekly">£</div>
+                    <br>
+                    <strong>Daily salary:</strong>
+                    <div id="netDaily">£</div>
+                </div>
+            </div>
+        </div>
+        </div>
+
+    </main>
+    <script>
+        $('#getNet').click(function () {
+            $.ajax({
+                type: "POST",
+                url: "{% url 'net' %}",
+                dataType: "json",
+                data: {
+                    "per": $('#per').val(),
+                    "salary": $('#InputSalary').val(),
+                },
+                success: function (data) {
+                    $('#yearly').html('£' + data.salary);
+                    $('#monthly').html('£' + data.monthly_salary);
+                    $('#weekly').html('£' + data.weekly_salary);
+                    $('#daily').html('£' + data.daily_salary);
+                    $('#netYearly').html('£' + data.net_salary);
+                    $('#netMonthly').html('£' + data.net_monthly_salary);
+                    $('#netWeekly').html('£' + data.net_weekly_salary);
+                    $('#netDaily').html('£' + data.net_daily_salary);
+                }
+            });
+
+        });
+
+        function getCookie(name) {
+            var cookieValue = null;
+            var i = 0;
+            if (document.cookie && document.cookie !== '') {
+                var cookies = document.cookie.split(';');
+                for (i; i < cookies.length; i++) {
+                    var cookie = jQuery.trim(cookies[i]);
+                    // Does this cookie string begin with the name we want?
+                    if (cookie.substring(0, name.length + 1) === (name + '=')) {
+                        cookieValue = decodeURIComponent(cookie.substring(name.length + 1));
+                        break;
+                    }
+                }
+            }
+            return cookieValue;
+        }
+
+        var csrftoken = getCookie('csrftoken');
+
+        function csrfSafeMethod(method) {
+            // these HTTP methods do not require CSRF protection
+            return (/^(GET|HEAD|OPTIONS|TRACE)$/.test(method));
+        }
+
+        $.ajaxSetup({
+            crossDomain: false, // obviates need for sameOrigin test
+            beforeSend: function (xhr, settings) {
+                if (!csrfSafeMethod(settings.type)) {
+                    xhr.setRequestHeader("X-CSRFToken", csrftoken);
+                }
+            }
+        });
+    </script>
+
+{% endblock %}
