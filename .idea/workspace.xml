@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4f329c05-d934-4319-9f27-2c2baaa9278c" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../cmdlb/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/../cmdlb/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../cmdlb/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../cmdlb/.idea/dataSources.local.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../cmdlb/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../cmdlb/.idea/workspace.xml" afterDir="false" />
@@ -40,6 +39,10 @@
       <change beforePath="$PROJECT_DIR$/../django-tutorial/product_hunt-project/products/templates/products/home.html" beforeDir="false" afterPath="$PROJECT_DIR$/../django-tutorial/product_hunt-project/products/templates/products/home.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../django-tutorial/product_hunt-project/products/tests.py" beforeDir="false" afterPath="$PROJECT_DIR$/../django-tutorial/product_hunt-project/products/tests.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../django-tutorial/product_hunt-project/products/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/../django-tutorial/product_hunt-project/products/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/calculator/templates/calc.html" beforeDir="false" afterPath="$PROJECT_DIR$/calculator/templates/calc.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/calculator/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/calculator/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/salary_calc/templates/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/salary_calc/templates/base.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/salary_calc/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/salary_calc/urls.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -62,30 +65,30 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="html" value="2705" />
-          <entry key="py" value="1304" />
+          <entry key="html" value="3030" />
+          <entry key="py" value="1440" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="HTML" value="2705" />
-          <entry key="Python" value="1304" />
+          <entry key="HTML" value="3030" />
+          <entry key="Python" value="1440" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="css" value="1" />
           <entry key="gitignore" value="1" />
-          <entry key="html" value="8" />
-          <entry key="py" value="17" />
+          <entry key="html" value="9" />
+          <entry key="py" value="18" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="CSS" value="1" />
-          <entry key="HTML" value="8" />
+          <entry key="HTML" value="9" />
           <entry key="PLAIN_TEXT" value="1" />
-          <entry key="Python" value="17" />
+          <entry key="Python" value="18" />
         </counts>
       </usages-collector>
     </session>
@@ -95,7 +98,7 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/salary_calc/settings.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="1350">
@@ -104,41 +107,15 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/calculator/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="303">
-              <caret line="44" column="24" lean-forward="true" selection-start-line="44" selection-start-column="24" selection-end-line="44" selection-end-column="24" />
+            <state relative-caret-position="438">
+              <caret line="48" column="49" selection-start-line="48" selection-start-column="49" selection-end-line="48" selection-end-column="49" />
               <folding>
                 <element signature="e#0#35#0" expanded="true" />
-                <marker date="1532936305445" expanded="true" signature="190:195" ph="..." />
+                <marker date="1532956726751" expanded="true" signature="190:195" ph="..." />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/salary_calc/urls.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="75">
-              <caret line="5" column="47" selection-start-line="5" selection-start-column="47" selection-end-line="5" selection-end-column="47" />
-              <folding>
-                <element signature="e#1#33#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/.gitignore">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/salary_calc/templates/base.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="168">
-              <caret line="36" column="51" selection-start-line="36" selection-start-column="51" selection-end-line="36" selection-end-column="51" />
             </state>
           </provider>
         </entry>
@@ -146,8 +123,17 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/calculator/templates/calc.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="315">
-              <caret line="21" column="61" selection-start-line="21" selection-start-column="61" selection-end-line="21" selection-end-column="61" />
+            <state relative-caret-position="375">
+              <caret line="25" column="77" selection-start-line="25" selection-start-column="77" selection-end-line="25" selection-end-column="77" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/salary_calc/templates/base.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1185">
+              <caret line="79" column="18" selection-start-line="79" selection-start-column="18" selection-end-line="79" selection-end-column="18" />
             </state>
           </provider>
         </entry>
@@ -166,10 +152,10 @@
         <option value="$PROJECT_DIR$/calculator/models.py" />
         <option value="$PROJECT_DIR$/calculator/urls.py" />
         <option value="$PROJECT_DIR$/calculator/static/style.css" />
-        <option value="$PROJECT_DIR$/calculator/views.py" />
-        <option value="$PROJECT_DIR$/calculator/templates/calc.html" />
-        <option value="$PROJECT_DIR$/salary_calc/templates/base.html" />
         <option value="$PROJECT_DIR$/salary_calc/urls.py" />
+        <option value="$PROJECT_DIR$/salary_calc/templates/base.html" />
+        <option value="$PROJECT_DIR$/calculator/templates/calc.html" />
+        <option value="$PROJECT_DIR$/calculator/views.py" />
       </list>
     </option>
   </component>
@@ -201,7 +187,32 @@
             </path>
             <path>
               <item name="salary_calc" type="b2602c69:ProjectViewProjectNode" />
+              <item name="salary_calc" type="462c0819:PsiDirectoryNode" />
+              <item name="calculator" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="salary_calc" type="b2602c69:ProjectViewProjectNode" />
+              <item name="salary_calc" type="462c0819:PsiDirectoryNode" />
+              <item name="salary_calc" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="salary_calc" type="b2602c69:ProjectViewProjectNode" />
+              <item name="salary_calc" type="462c0819:PsiDirectoryNode" />
+              <item name="salary_calc" type="462c0819:PsiDirectoryNode" />
+              <item name="templates" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="salary_calc" type="b2602c69:ProjectViewProjectNode" />
               <item name="cmdlb" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="salary_calc" type="b2602c69:ProjectViewProjectNode" />
+              <item name="product_hunt-project" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="salary_calc" type="b2602c69:ProjectViewProjectNode" />
+              <item name="product_hunt-project" type="462c0819:PsiDirectoryNode" />
+              <item name="product_hunt" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -279,8 +290,9 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1920" height="1046" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49945116" visible="true" weight="0.25320512" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49945116" visible="true" weight="0.25320512" />
       <window_info id="Structure" order="1" sideWeight="0.50054884" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" sideWeight="0.50054884" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -294,7 +306,7 @@
       <window_info anchor="bottom" id="Version Control" order="8" />
       <window_info anchor="bottom" id="Database Changes" order="9" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="11" visible="true" weight="0.32893288" />
+      <window_info anchor="bottom" id="Terminal" order="11" visible="true" weight="0.32893288" />
       <window_info anchor="bottom" id="Python Console" order="12" weight="0.32893288" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -377,27 +389,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/calculator/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="303">
-          <caret line="44" column="24" lean-forward="true" selection-start-line="44" selection-start-column="24" selection-end-line="44" selection-end-column="24" />
-          <folding>
-            <element signature="e#0#35#0" expanded="true" />
-            <marker date="1532936305445" expanded="true" signature="190:195" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../django-tutorial/product_hunt-project/product_hunt/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="38" lean-forward="true" selection-start-line="8" selection-start-column="38" selection-end-line="8" selection-end-column="38" />
-          <folding>
-            <element signature="e#0#32#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/../cmdlb/cmdlb/templates/base.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="435">
@@ -412,26 +403,19 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/calculator/templates/calc.html">
+    <entry file="file://$PROJECT_DIR$/salary_calc/settings.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="21" column="61" selection-start-line="21" selection-start-column="61" selection-end-line="21" selection-end-column="61" />
+        <state relative-caret-position="1350">
+          <caret line="90" lean-forward="true" selection-start-line="90" selection-end-line="90" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/salary_calc/templates/base.html">
+    <entry file="file://$PROJECT_DIR$/../django-tutorial/product_hunt-project/product_hunt/urls.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="168">
-          <caret line="36" column="51" selection-start-line="36" selection-start-column="51" selection-end-line="36" selection-end-column="51" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/salary_calc/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="47" selection-start-line="5" selection-start-column="47" selection-end-line="5" selection-end-column="47" />
+        <state relative-caret-position="120">
+          <caret line="8" column="38" lean-forward="true" selection-start-line="8" selection-start-column="38" selection-end-line="8" selection-end-column="38" />
           <folding>
-            <element signature="e#1#33#0" expanded="true" />
+            <element signature="e#0#32#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -439,10 +423,38 @@
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/salary_calc/settings.py">
+    <entry file="file://$PROJECT_DIR$/salary_calc/urls.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1350">
-          <caret line="90" lean-forward="true" selection-start-line="90" selection-end-line="90" />
+        <state relative-caret-position="75">
+          <caret line="5" column="15" lean-forward="true" selection-start-line="5" selection-start-column="15" selection-end-line="5" selection-end-column="15" />
+          <folding>
+            <element signature="e#1#33#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/salary_calc/templates/base.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1185">
+          <caret line="79" column="18" selection-start-line="79" selection-start-column="18" selection-end-line="79" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/calculator/templates/calc.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="375">
+          <caret line="25" column="77" selection-start-line="25" selection-start-column="77" selection-end-line="25" selection-end-column="77" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/calculator/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="438">
+          <caret line="48" column="49" selection-start-line="48" selection-start-column="49" selection-end-line="48" selection-end-column="49" />
+          <folding>
+            <element signature="e#0#35#0" expanded="true" />
+            <marker date="1532956726751" expanded="true" signature="190:195" ph="..." />
+          </folding>
         </state>
       </provider>
     </entry>

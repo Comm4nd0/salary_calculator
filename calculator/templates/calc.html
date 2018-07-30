@@ -9,21 +9,21 @@
                     else.
                 </small>
                 <div class="input-group mb-2">
-                    <select id="per" class="form-control">
-                        <option value="yearly">Yearly</option>
-                        <option value="monthly">Monthly</option>
-                        <option value="weekly">Weekly</option>
-                        <option value="daily">Daily</option>
-                    </select>
-
-                    <label class="sr-only" for="InputSalary">Username</label>
-
+                    <div>
+                        <select id="per" class="form-control">
+                            <option value="yearly">Yearly</option>
+                            <option value="monthly">Monthly</option>
+                            <option value="weekly">Weekly</option>
+                            <option value="daily">Daily</option>
+                            <option value="hourly">Hourly</option>
+                        </select>
+                    </div>
                     <div class="input-group-prepend">
                         <div class="input-group-text">£</div>
                     </div>
                     <input type="text" class="form-control" id="InputSalary" placeholder="Enter salary">
                     <div class="col-4 ">
-                        <button id="getNet" class="btn btn-primary">Get NET Vals</button>
+                        <button id="getNet" class="btn btn-primary">Calculate</button>
                     </div>
                 </div>
 
@@ -34,7 +34,9 @@
             <div class="col-6">
 
                 <div class="jumbotron">
-                    <h2>Gross</h2>
+                    <div class="input-group-prepend">
+                        <h1>Gross Income </h1> <a href="#" data-toggle="tooltip" data-placement="top" title="Before Tax!"><i class="fas fa-question"></i></a>
+                    </div>
                     <strong>Yearly salary:</strong>
                     <div id="yearly">£</div>
                     <br>
@@ -46,13 +48,17 @@
                     <br>
                     <strong>Daily salary:</strong>
                     <div id="daily">£</div>
-
+                    <br>
+                    <strong>Hourly salary:</strong>
+                    <div id="hourly">£</div>
 
                 </div>
             </div>
             <div class="col-6">
                 <div class="jumbotron">
-                    <h2>Net</h2>
+                    <div class="input-group-prepend">
+                        <h1>Net Income </h1> <a href="#" data-toggle="tooltip" data-placement="top" title="After Tax!"><i class="fas fa-question"></i></a>
+                    </div>
                     <strong>Yearly salary:</strong>
                     <div id="netYearly">£</div>
                     <br>
@@ -64,6 +70,9 @@
                     <br>
                     <strong>Daily salary:</strong>
                     <div id="netDaily">£</div>
+                    <br>
+                    <strong>Hourly salary:</strong>
+                    <div id="netHourly">£</div>
                 </div>
             </div>
         </div>
@@ -71,6 +80,11 @@
 
     </main>
     <script>
+
+        $(function () {
+            $('[data-toggle="tooltip"]').tooltip()
+        })
+
         $('#getNet').click(function () {
             $.ajax({
                 type: "POST",
@@ -81,14 +95,18 @@
                     "salary": $('#InputSalary').val(),
                 },
                 success: function (data) {
+                    {#Gross#}
                     $('#yearly').html('£' + data.salary);
                     $('#monthly').html('£' + data.monthly_salary);
                     $('#weekly').html('£' + data.weekly_salary);
                     $('#daily').html('£' + data.daily_salary);
+                    $('#hourly').html('£' + data.hourly_salary);
+                    {#Net#}
                     $('#netYearly').html('£' + data.net_salary);
                     $('#netMonthly').html('£' + data.net_monthly_salary);
                     $('#netWeekly').html('£' + data.net_weekly_salary);
                     $('#netDaily').html('£' + data.net_daily_salary);
+                    $('#netHourly').html('£' + data.net_hourly_salary);
                 }
             });
 
